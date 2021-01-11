@@ -1,0 +1,75 @@
+body{
+    background-color: #0a192f;
+    font-family: Calibri;
+    color: darkgray;
+}
+img {
+    border-radius: 50%;
+    max-width:100%;
+    max-height:100%;
+    -o-object-fit:scale-down;
+    object-fit:scale-down;
+    margin-top: 5%;
+    opacity: 1.0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+
+}
+img:hover{
+    opacity: 0.7;
+}
+.center{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: black;
+
+}
+.content{
+    margin-right: auto;
+    margin-left: auto;
+}
+.title{
+    padding-top: 2.5%;
+    text-align: center;
+    line-height:0.9em;
+}
+h1{
+    font-size: 50px;
+    color: gainsboro;
+    background: /* gradient can be an image */
+            linear-gradient(
+                    to left,
+                    rgba(9,121,110,1) 0%,
+                    rgba(7,143,145,1) 12%,
+                    rgba(4,169,186,1) 47%,
+                    rgba(19,37,54,1) 100%
+            )
+            left
+            bottom
+            no-repeat;
+    background-size:100% 5px ;/* if linear-gradient, we need to resize it */
+}
+
+h2{
+    font-size: 40px;
+}
+p{
+    text-align: left;
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color: aquamarine;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.footer > a{
+    color: darkgray;
+}
