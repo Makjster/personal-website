@@ -248,8 +248,7 @@
     <title>Matti Johannsen</title>
 </head>
 <body>
-
-<div>
+  <div>
     <div class="container content">
       <div class="row py-5">
         <!-- Navigation Section -->
@@ -270,8 +269,11 @@
             </div>
             <nav class="navigation">
               <ul>
-                <li v-for="(section, index) in sections" :key="index">
-                  <a :href="'#' + section.id" :class="{ active: section.isActive }">{{ section.label }}</a>
+                <li>
+                  <a href="#experience">Experience</a>
+                </li>
+                <li>
+                  <a href="#academic">Academic Background</a>
                 </li>
               </ul>
             </nav>
@@ -288,23 +290,62 @@
           <div id="experience" class="section-container">
             <h2>Experience</h2>
             <div class="experience-container">
-              <div v-for="(experience, index) in experienceItems" :key="index" class="experience-item" @click="openLink(experience.url)" style="cursor:pointer">
+              <div>
                 <div class="row">
                   <div class="col-md-3">
-                    <h3>{{ experience.date }}</h3>
+                    <h3>2023-today</h3>
                   </div>
                   <div class="col-md-9">
-                    <h3>{{ experience.role }}</h3>
-                    <h4>{{ experience.company }}</h4>
+                    <h3>IT Consultant</h3>
+                    <h4>SER Group</h4>
                     <ul>
-                      <li v-for="(item, itemIndex) in experience.details" :key="itemIndex">{{ item }}</li>
+                      <li>
+                        Automating customer-specific workflows in a document management system
+                      </li>
+                      <li>
+                        Leading a working group focused on cloud technologies in the Community of Practice "Standardization of Development"
+                      </li>
+                      <li>
+                        Integrating GitLab into departments daily workflow
+                      </li>
+                      <li>
+                        Establishing best programming practices within the department
+                      </li>
                     </ul>
                   </div>
                   <div class="col-md-3">
                     <h3>Skills</h3>
                   </div>
                   <div class="col-md-9">
-                    {{ experience.skills }}
+                    Java, Groovy, Git, AWS, Spring, Linux, Maven
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3>2021-2023</h3>
+                  </div>
+                  <div class="col-md-9">
+                    <h3>Junior Consultant</h3>
+                    <h4>Seven Principles Group</h4>
+                    <ul>
+                      <li>
+                        Developed an innovative, cloud-based platform for streamlined freelance management
+                      </li>
+                      <li>
+                        Created an efficient and user-friendly solution
+                      </li>
+                      <li>
+                        Performed database migrations in AWS
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Skills</h3>
+                  </div>
+                  <div class="col-md-9">
+                    Java, Git, AWS, Spring, Linux, Gradle
                   </div>
                 </div>
               </div>
@@ -313,23 +354,124 @@
           <div id="academic" class="section-container">
             <h2>Academic Background</h2>
             <div class="academic-container">
-              <div v-for="(academic, index) in academicItems" :key="index" class="academic-item" @click="openLink(academic.url)" style="cursor:pointer">
+              <div>
                 <div class="row">
                   <div class="col-md-3">
-                    <h3>{{ academic.date }}</h3>
+                    <h3>2017-2021</h3>
                   </div>
                   <div class="col-md-9">
-                    <h3>{{ academic.degree }}</h3>
-                    <h4>{{ academic.institution }}</h4>
+                    <h3>Bachelor's Degree</h3>
+                    <h4>RWTH Aachen</h4>
                     <ul>
-                      <li v-for="(item, itemIndex) in academic.details" :key="itemIndex">{{ item }}</li>
+                      <li>
+                        Obtained a Bachelor's degree in Computer Science
+                      </li>
+                      <li>
+                        Minor in Economics
+                      </li>
                     </ul>
                   </div>
                   <div class="col-md-3">
                     <h3>Skills</h3>
                   </div>
                   <div class="col-md-9">
-                    {{ academic.skills }}
+                    
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3>2018-2021</h3>
+                  </div>
+                  <div class="col-md-9">
+                    <h3>Student Assistant</h3>
+                    <h4>Chair of Individualized Production in Architecture</h4>
+                    <ul>
+                      <li>
+                        Development of an MQTT-based software tool for precise robot control
+                      </li>
+                      <li>
+                        Conceptualized and implemented a Rust-based web application, establishing it as a benchmark
+                      </li>
+                      <li>
+                        Engineered a PHP-based authentication web service with a comprehensive user database
+                      </li>
+                      <li>
+                        Proficiency in adapting web design elements across multiple services
+                      </li>
+                      <li>
+                        Played a crucial role in software design for seamless data exchange between diverse systems
+                      </li>
+                      <li>
+                        Systems include Computer-Aided Design, Computer-Aided Manufacturing, and Building Information Modeling
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Skills</h3>
+                  </div>
+                  <div class="col-md-9">
+                    C#, WPF, Research, PHP, HTML, CSS, Hugo
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3>2020</h3>
+                  </div>
+                  <div class="col-md-9">
+                    <h3>Tutoring Experience</h3>
+                    <h4>Chair of Communication and Distributed Systems</h4>
+                    <ul>
+                      <li>
+                        Tutor for the course Datacommunication and Security
+                      </li>
+                      <li>
+                        Assisted students with understanding complex concepts
+                      </li>
+                      <li>
+                        Facilitated discussions and provided guidance on practical assignments
+                      </li>
+                      <li>
+                        Honed communication and presentation skills
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Skills</h3>
+                  </div>
+                  <div class="col-md-9">
+                    
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3>2021</h3>
+                  </div>
+                  <div class="col-md-9">
+                    <h3>Bachelor's Thesis</h3>
+                    <h4>Uniklinikum Aachen</h4>
+                    <ul>
+                      <li>
+                        Bachelor's thesis at the chair of Software Engineering in collaboration with the Uniklinikum Aachen
+                      </li>
+                      <li>
+                        Topic: Development of a Domain-Specific Language for Controlling a Syringe Pump of a Pharmaceutical Synthesis Plant
+                      </li>
+                      <li>
+                        Developed a DSL that can control a syringe pump via an interface
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Skills</h3>
+                  </div>
+                  <div class="col-md-9">
+                    C#, WPF, Java
                   </div>
                 </div>
               </div>
@@ -340,6 +482,22 @@
     </div>
     <div class="footer text-center py-3"><a href="impressum.html">Impressum</a></div>
   </div>
-
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script> <!-- Include the Font Awesome kit here -->
+  <script>
+    function handleScroll() {
+      const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      const sections = document.querySelectorAll('.section-container');
+      
+      sections.forEach(section => {
+        const offsetTop = section.offsetTop - 75; // Adjust the offset as needed
+        const offsetBottom = offsetTop + section.offsetHeight;
+        const isActive = scrollPos >= offsetTop && scrollPos < offsetBottom;
+        
+        section.classList.toggle('active', isActive);
+      });
+    }
+    
+    window.addEventListener('scroll', handleScroll);
+  </script>
 </body>
 </html>
