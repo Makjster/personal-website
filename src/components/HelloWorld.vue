@@ -102,16 +102,29 @@ export default {
         { id: 'experience', label: 'Experience', isActive: false },
         { id: 'academic', label: 'Academic Background', isActive: false },
       ],
+
       experienceItems: [
         {
-          date: '2023-today',
+          date: '2025-today',
+          role: 'Senior Solutions Architect',
+          company: 'ZiScom Solutions GmbH',
+          details: [
+            'Design and implementation of software solutions for electronic invoice processing.',
+            'Engineering scalable and resilient enterprise content management platforms, leveraging Java to design tailored solutions that meet complex business needs.',
+            'Planning and implementation of large-scale document and metadata migrations, ensuring integrity, traceability, and minimal downtime.',
+          ],
+          skills: 'Java, Git, AWS, Spring, Linux, Maven',
+          url: 'https://ziscom.solutions/'
+        },
+        {
+          date: '2023-2024',
           role: 'IT Consultant',
           company: 'SER Group',
           details: [
-            'Automating customer-specific workflows in a document management system',
-            'Leading a working group focused on cloud technologies in the Community of Practice "Standardization of Development"',
-            'Integrating GitLab into departments daily workflow',
-            'Establishing best programming practices within the department',
+            'Development and customization of highly complex and highly available ECM systems and, in particular, with a focus on Java development',
+            'Leading a working group focused on cloud technologies in the Community of Practice "Cloud"',
+            'Architecture of software implementation projects in the cloud (S2S VPN) as well as on-premise',
+            'Consultation on all phases of the software implementation process, from solution design to completion of the hyper-care phase',
           ],
           skills: 'Java, Groovy, Git, AWS, Spring, Linux, Maven',
           url: 'https://www.sergroup.com/en/'
